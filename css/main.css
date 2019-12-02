@@ -1,0 +1,70 @@
+* { box-sizing: border-box; }
+
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src: url('AmericanBreweryRough.ttf') format('truetype');
+}
+body { background-color: gold; color: black; font-size: 14px; }
+
+.buffer { min-height: 100vh }
+
+.main-header { text-align: center; background-color: white; margin-top: -10px;}
+
+section { margin-bottom: 100px; color: white; }
+
+#usa h1{font-size: 30px; color: black; text-align: center;}
+
+#usa img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+/* #button stats{margin-left: auto; margin-right: auto; display: block; color: red;} */
+
+.stats {color: black; margin-left: auto; margin-right: 600px; display: block; margin-top: -55px; font-size: 20px; width: 2%; padding-bottom: 20px;}
+
+#brazil h1{font-size: 30px; color: black; text-align: center;}
+
+#brazil img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+#canada h1{font-size: 30px; color: black; text-align: center;}
+
+#canada img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+#netherlands h1{font-size: 30px; color: black; text-align: center;}
+
+#netherlands img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+#nigeria h1{font-size: 30px; color: black; text-align: center;}
+
+#nigeria img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+#ireland h1{font-size: 30px; color: black; text-align: center;}
+
+#ireland img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+#russia h1{font-size: 30px; color: black; text-align: center;}
+
+#russia img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+#belarus h1{font-size: 30px; color: black; text-align: center;}
+
+#belarus img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+#england h1{font-size: 30px; color: black; text-align: center;}
+
+#england img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+#australia h1{font-size: 30px; color: black; text-align: center;}
+
+#australia img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+#kyrgystan h1{font-size: 30px; color: black; text-align: center;}
+
+#kyrgystan img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+#poland h1{font-size: 30px; color: black; text-align: center;}
+
+#poland img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+#china h1{font-size: 30px; color: black; text-align: center;}
+
+#china img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
