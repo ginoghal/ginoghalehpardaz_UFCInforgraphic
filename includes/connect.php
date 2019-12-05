@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pw = "root";
-$db = "ufc_titles-stats";
+$db = "db_ufctitles";
 
 $conn = mysqli_connect($host, $user, $pw, $db);
 
@@ -16,7 +16,7 @@ if (!$conn) {
 if (isset($_GET["id"])) {
     $theLabel = $_GET["id"];
 
-    $myQuery = "SELECT * FROM stats WHERE id='$Titles'";
+    $myQuery = "SELECT * FROM stats WHERE id='0'";
 
     $result = mysqli_query($conn, $myQuery);
     $rows = array();

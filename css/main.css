@@ -4,13 +4,15 @@
   font-family: Arial, Helvetica, sans-serif;
   src: url('AmericanBreweryRough.ttf') format('truetype');
 }
-body { background-color: gold; color: black; font-size: 14px; }
+body { background-color: gold; color: black; font-size: 30px; }
 
 .buffer { min-height: 100vh }
 
 .main-header { text-align: center; background-color: white; margin-top: -10px;}
 
-section { margin-bottom: 100px; color: white; }
+.main-header img{ width: 15%; padding-top: 10px;}
+
+section { margin-bottom: 100px; color: white;}
 
 #usa h1{font-size: 30px; color: black; text-align: center;}
 
@@ -67,4 +69,6 @@ section { margin-bottom: 100px; color: white; }
 #china h1{font-size: 30px; color: black; text-align: center;}
 
 #china img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+
+.popoverufc{margin-top: 1px; display: block; position: fixed; color: red; font-size: 20px; font-family: Arial, Helvetica, sans-serif;}
 
