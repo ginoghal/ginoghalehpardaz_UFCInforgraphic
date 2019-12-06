@@ -1,74 +1,104 @@
 * { box-sizing: border-box; }
 
 @font-face {
-  font-family: Arial, Helvetica, sans-serif;
-  src: url('AmericanBreweryRough.ttf') format('truetype');
+  font-family: 'arial';
+
 }
-body { background-color: gold; color: black; font-size: 30px; }
+body { background-image: radial-gradient(circle, #e1dfdf,#cacbce, #e5d08f); color: black; font-size: 14px; }
 
 .buffer { min-height: 100vh }
 
-.main-header { text-align: center; background-color: white; margin-top: -10px;}
+.background img{width: 100%; z-index: 1;}
 
-.main-header img{ width: 15%; padding-top: 10px;}
+main { padding: 40px; }
 
-section { margin-bottom: 100px; color: white;}
+section { margin-bottom: 1px; color: white; float: left; margin-left:10px; }
 
-#usa h1{font-size: 30px; color: black; text-align: center;}
+section > div:not(.text-wrapper) {
+  width: 320px; 
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-#usa img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+.text-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  width: 65%;
+}
 
-/* #button stats{margin-left: auto; margin-right: auto; display: block; color: red;} */
+section h3 {
+  color: black;
+  font-family: 'brewery', sans-serif;
+  font-size: 30px;
+  margin-top: -5px;
+  text-align: center;
+  margin-left: 50px;
+}
+section p { color: black; width: 70%; font-size: 1.25rem; position: relative; margin-top: -250px; margin-left: auto;  }
 
-.stats {color: black; margin-left: auto; margin-right: 600px; display: block; margin-top: -55px; font-size: 20px; width: 2%; padding-bottom: 20px;}
 
-#brazil h1{font-size: 30px; color: black; text-align: center;}
+.hidden { display: none; }
 
-#brazil img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+.svg-graphic { width: 150px; }
 
-#canada h1{font-size: 30px; color: black; text-align: center;}
+.main-header {
+  margin: 2px 2px 2px 2px; 
+  font-size: 2rem;
+  font-family: arial, sans-serif;
+  padding-top: 20px;
+  padding-left: 20px;
 
-#canada img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+}
 
-#netherlands h1{font-size: 30px; color: black; text-align: center;}
+.main-header img{
+  width: 30%;
+}
 
-#netherlands img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+.ufc-info { display: inline-block; vertical-align: top; padding: 30px; border: thin solid white; }
 
-#nigeria h1{font-size: 30px; color: black; text-align: center;}
+p > span { display: block; padding-bottom: 12px; }
 
-#nigeria img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+.popover { 
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 150%;
+  background-color: black;
+  width: 200px;
+  z-index: 1;
+  padding: 1px;
+  cursor: pointer;
+}
 
-#ireland h1{font-size: 30px; color: black; text-align: center;}
+.show-popover { display: block; 
+  position: absolute;
+  top: 31px;
+  left: 20px;
+  background-color: black;
+  width: 280px;
+  z-index: 1;
+  padding: 1px;
+  cursor: pointer;
+}
 
-#ireland img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
+.see-more { 
+  display: block; 
+  padding: 12px 18px; 
+  color: white; 
+  background-color: black; 
+  margin-top: 25px;
+  cursor: pointer;
+}
 
-#russia h1{font-size: 30px; color: black; text-align: center;}
-
-#russia img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
-
-#belarus h1{font-size: 30px; color: black; text-align: center;}
-
-#belarus img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
-
-#england h1{font-size: 30px; color: black; text-align: center;}
-
-#england img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
-
-#australia h1{font-size: 30px; color: black; text-align: center;}
-
-#australia img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
-
-#kyrgystan h1{font-size: 30px; color: black; text-align: center;}
-
-#kyrgystan img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
-
-#poland h1{font-size: 30px; color: black; text-align: center;}
-
-#poland img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
-
-#china h1{font-size: 30px; color: black; text-align: center;}
-
-#china img{width: 25%; margin-left: auto; margin-right: auto; display: block;}
-
-.popoverufc{margin-top: 1px; display: block; position: fixed; color: red; font-size: 20px; font-family: Arial, Helvetica, sans-serif;}
-
+.see-more:hover { 
+  display: block; 
+  padding: 12px 18px; 
+  color: white; 
+  background-color: #3333ff; 
+  margin-top: 25px;
+  cursor: pointer;
+}

@@ -2,11 +2,26 @@
    
     console.log("fired");
     
-    const statsButtons = document.querySelectorAll('.stats'),
-    popOver = document.querySelector(".popoverufc"),
-    country = document.querySelector("#UFC_Titles");
+    const seeMoreButtons = document.querySelectorAll('.see-more'),
+        popOver = document.querySelector(".popover"); 
 
-  // waypoints are for things you can scroll to - content further down the page
+    // waypoints are for things you can scroll to - content further down the page
+    const waypoint1 = new Waypoint({
+        element: document.getElementById('ufc2').querySelector('.svg-graphic'),
+        handler: function(direction) {
+        console.log('Scrolled to waypoint!');
+        },
+        offset: 100
+    });
+
+    const waypoint2 = new Waypoint({
+        element: document.getElementById('ufc3').querySelector('.svg-graphic'),
+        handler: function(direction) {
+            console.log('scrolled to fancy glasses');
+        },
+
+        offset: 150
+    });
 
     function fetchData() {
         let targetElement = this,
@@ -21,9 +36,10 @@
         .catch((err) => console.log(err));
     }
 
-    function buildPopover(db_ufctitles, el)  {
-        popOver.querySelector(".UFC_Titles").textContent = `country: ${db_ufctitles.Country}`;
-        popOver.querySelector(".stats").textContent = `stats: ${db_ufctitles.Titles}`;
+    function buildPopover(titles, el) {
+        popOver.querySelector(".country").textContent = `Country: ${titles.country}`;
+        popOver.querySelector(".titles").textContent = `Titles: ${titles.titles}`;
+        popOver.querySelector(".fun_fact").textContent = `Fun Fact: ${titles.fun_fact}`;
 
 
        popOver.classList.add('show-popover');
@@ -31,5 +47,5 @@
        el.appendChild(popOver);
     }
 
-    statsButtons.forEach(el => el.addEventListener("click", fetchData)); 
+    seeMoreButtons.forEach(el => el.addEventListener("click", fetchData));
 })();

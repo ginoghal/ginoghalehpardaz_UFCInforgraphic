@@ -10,102 +10,171 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
-    <title>UFC Title Infographic</title>
+    <title>UFC Titles by Country</title>
 </head>
 <body>
-    <h1 class="main-header"> 
-        <img src="images/ufc.png" alt="ufclogo"> Titles by Country</h1>
+
+    <h1 class="main-header"> <img src="images/ufc.png" alt="ufclogo"> Titles by Country</h1>
     <main>
-
-            <article class="popoverufc">
-                    <h4 class="countryname">Country </h4>
-                    <div class="titles">Titles Won: </div>
-                </article>
         <!-- if we were using a framework, these might be 6-col or something-->
-        <section id="UFC_Titles">
-            <div id="usa">
-                <img src="images/USA-logo.svg" alt="usa">
-                <h1>USA</h1>
-                <span class="stats" data-target="0"><button id="stats">Stats</button></span>
-            </div>
+        <section id="ufc1">
+          <div class="ufc_wrapper">
 
-            <div id="brazil">
-                <img src="images/Brazil-logo.svg" alt="brazil">
-                <h1>Brazil</h1>
-                <span class="stats" data-target="1"><button id="stats">Stats</button></span>
-            </div>
+            <object data="images/USA-logo.svg" type="image/svg+xml" class="svg-graphic" id="bottle"></object>
+            <span class="see-more" data-target="1">Title Stats</span>
+          </div>
 
-            <div id="canada">
-                <img src="images/Canada-logo.svg" alt="canada">
-                <h1>Canada</h1>
-                <span class="stats" data-target="2"><button id="stats">Stats</button></span>
-            </div>
-
-            <div id="netherlands">
-                <img src="images/Netherlands-logo.svg" alt="netherlands">
-                <h1>Netherlands</h1>
-                <span class="stats" data-target="3"><button id="stats">Stats</button></span>
-            </div>
-
-            <div id="nigeria">
-                <img src="images/Nigeria-logo.svg" alt="nigeria">
-                <h1>Nigeria</h1>
-                <span class="stats" data-target="4"><button id="stats">Stats</button></span>
-            </div>
-
-            <div id="ireland">
-                <img src="images/Ireland-logo.svg" alt="ireland">
-                <h1>Ireland</h1>
-                <span class="stats" data-target="5"><button id="stats">Stats</button></span>
-            </div>
-
-            <div id="russia">
-                <img src="images/Russia-logo.svg" alt="russia">
-                <h1>Russia</h1>
-                <span class="stats" data-target="6"><button id="stats">Stats</button></span>
-            </div>
-
-            <div id="belarus">
-                <img src="images/Belarus-logo.svg" alt="belarus">
-                <h1>Belarus</h1>
-                <span class="stats" data-target="7"><button id="stats">Stats</button></span>
-            </div>
-
-            <div id="england">
-                <img src="images/England-logo.svg" alt="england">
-                <h1>England</h1>
-                <span class="stats" data-target="8"><button id="stats">Stats</button></span>
-            </div>
-
-            <div id="australia">
-                <img src="images/Australia-logo.svg" alt="australia">
-                <h1>Australia</h1>
-                <span class="stats" data-target="9"><button id="stats">Stats</button></span>
-            </div>
-
-            <div id="kyrgystan">
-                <img src="images/Kyrgystan-logo.svg" alt="kyrgystan">
-                <h1>Kyrgystan</h1>
-                <span class="stats" data-target="10"><button id="stats">Stats</button></span>
-            </div>
-
-            <div id="poland">
-                <img src="images/Poland-logo.svg" alt="poland">
-                <h1>Poland</h1>
-                <span class="stats" data-target="11"><button id="stats">Stats</button></span>
-            </div>
-
-            <div id="china">
-                <img src="images/China-logo.svg" alt="china">
-                <h1>China</h1>
-                <span class="stats" data-target="12"><button id="stats">Stats</button></span>
-            </div>
-    
+          <div class="text-wrapper">
+            <h3>USA</h3>
+   
+          </div>
         </section>
 
-        <article class="popoverufc">
-            <h4 class="countryname">Country </h4>
-            <div class="titles">Titles Won: </div>
+        <section id="ufc2">
+          <div class="ufc_wrapper">
+            <object data="images/Brazil-logo.svg" type="image/svg+xml" class="svg-graphic" id="barrels"></object>
+            <span class="see-more" data-target="2">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Brazil</h3>
+          </div>
+        </section>
+
+        <section id="ufc3">
+          <div class="ufc_wrapper">
+            <object data="images/Canada-logo.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="3">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Canada</h3>
+          </div>
+        </section>
+
+        <section id="ufc4">
+          <div class="ufc_wrapper">
+            <object data="images/Netherlands-logo.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="4">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Netherlands</h3>
+          </div>
+        </section>
+
+        <section id="ufc5">
+          <div class="ufc_wrapper">
+            <object data="images/Nigeria-logo.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="5">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Nigeria</h3>
+          </div>
+        </section>
+
+        <section id="ufc6">
+          <div class="ufc_wrapper">
+  
+            <object data="images/Ireland-logo.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="6">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Ireland</h3>
+          </div>
+        </section>
+
+        <section id="ufc7">
+          <div class="ufc_wrapper">
+ 
+            <object data="images/Russia-logo.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="7">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Russia</h3>
+          </div>
+        </section>
+
+        <section id="ufc8">
+          <div class="ufc_wrapper">
+          
+            <object data="images/Belarus-logo.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="8">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Belarus</h3>
+          </div>
+        </section>
+
+        <section id="ufc9">
+          <div class="ufc_wrapper">
+           
+            <object data="images/England-logo.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="9">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>England</h3>
+          </div>
+        </section>
+
+        <section id="ufc10">
+          <div class="ufc_wrapper">
+          
+            <object data="images/Australia-logo.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="10">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Australia</h3>
+          </div>
+        </section>
+
+        <section id="ufc11">
+          <div class="ufc_wrapper">
+          
+            <object data="images/Kyrgystan-logo.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="11">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Kyrgystan</h3>
+          </div>
+        </section>
+
+        <section id="ufc12">
+          <div class="ufc_wrapper">
+            
+            <object data="images/Poland-logo.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="12">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Poland</h3>
+          </div>
+        </section>
+
+        <section id="ufc13">
+          <div class="ufc_wrapper">
+          
+            <object data="images/China-logo.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="13">Title Stats</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>China</h3>
+          </div>
+        </section>
+
+
+        <article class="popover">
+            <h4 class="country">Country: </h4>
+            <h4 class="titles">Number of Titles Won: </h4>
+            <h4 class="fun_fact">Fun Fact:</div>
         </article>
     </main>
     <script src="js/main.js"></script>
