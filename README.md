@@ -4,8 +4,6 @@ This infograph was designed as a break down of all the countries that have won U
 
 for class MMED 3039. 
 
-
-To work on: -Wanting to add additional functionalty (if time permits)
-            -Make it look more sleek (if time permits)
+Intended Browser (one I used the most for verifying edits and changes):Mozilla Firefox
             
 
