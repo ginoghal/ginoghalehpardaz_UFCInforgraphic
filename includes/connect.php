@@ -2,12 +2,12 @@
 $host = "localhost";
 $user = "root";
 $pw = "root";
-$db = "db_ufctitles";
+$db = "ufctitles-country";
 
 $conn = mysqli_connect($host, $user, $pw, $db);
 
 if (!$conn) {
-    echo "Tyron Woodley sucks!";
+    echo "no soup for you!";
     die;
 }
 
@@ -16,7 +16,7 @@ if (!$conn) {
 if (isset($_GET["id"])) {
     $theLabel = $_GET["id"];
 
-    $myQuery = "SELECT * FROM stats WHERE id='0'";
+    $myQuery = "SELECT * FROM ufc_titles WHERE id='$theLabel'";
 
     $result = mysqli_query($conn, $myQuery);
     $rows = array();
