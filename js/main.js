@@ -47,5 +47,6 @@
        el.appendChild(popOver);
     }
 
-    seeMoreButtons.forEach(el => el.addEventListener("click", fetchData));
-})();
+    seeMoreButtons.forEach(el => el.addEventListener("click", fetchData))
+    
+  })();

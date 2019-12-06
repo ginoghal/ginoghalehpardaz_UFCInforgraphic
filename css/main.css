@@ -15,12 +15,28 @@ main { padding: 40px; }
 section { margin-bottom: 1px; color: white; float: left; margin-left:10px; }
 
 section > div:not(.text-wrapper) {
-  width: 320px; 
+  width: 250px; 
   text-align: center;
   padding: 20px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+}
+
+.ufcbelt img{
+  width: 400px;
+  height: 375px;
+  margin-left: 100px;
+  margin-top: -10px;
+}
+
+.ufcbelt p{
+  margin-top: -130px;
+  float: right;
+  margin-right: 185px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 .text-wrapper {
@@ -36,7 +52,7 @@ section h3 {
   font-size: 30px;
   margin-top: -5px;
   text-align: center;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 section p { color: black; width: 70%; font-size: 1.25rem; position: relative; margin-top: -250px; margin-left: auto;  }
 
@@ -76,10 +92,10 @@ p > span { display: block; padding-bottom: 12px; }
 
 .show-popover { display: block; 
   position: absolute;
-  top: 31px;
-  left: 20px;
-  background-color: black;
-  width: 280px;
+  top: 23px;
+  left: -3px;
+ background-color:rgba(0,0,0,0.7);
+  width: 250px;
   z-index: 1;
   padding: 1px;
   cursor: pointer;
