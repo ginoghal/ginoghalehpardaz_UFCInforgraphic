@@ -9,7 +9,7 @@
     const waypoint1 = new Waypoint({
         element: document.getElementById('ufc2').querySelector('.svg-graphic'),
         handler: function(direction) {
-        console.log('Scrolled to waypoint!');
+        console.log('look at the champions!');
         },
         offset: 100
     });
@@ -17,7 +17,7 @@
     const waypoint2 = new Waypoint({
         element: document.getElementById('ufc3').querySelector('.svg-graphic'),
         handler: function(direction) {
-            console.log('scrolled to fancy glasses');
+            console.log('UFC is a true worldwide sport as there are champions from all over the world!');
         },
 
         offset: 150
